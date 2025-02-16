@@ -316,6 +316,31 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "irons_spellbooks:scroll",
+          "functions": [
+            {
+              "function": "irons_spellbooks:randomize_spell",
+              "quality": {
+                "min": 0.3,
+                "max": 0.7
+              }
+            }
+          ],
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:chests/village/village_weaponsmith"
         }
