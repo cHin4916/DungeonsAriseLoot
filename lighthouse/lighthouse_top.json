@@ -219,7 +219,17 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:stone"
+          "weight": 2,
+          "name": "irons_spellbooks:scroll",
+          "functions": [
+            {
+              "function": "irons_spellbooks:randomize_spell",
+              "quality": {
+                "min": 0.1,
+                "max": 0.5
+              }
+            }
+          ]
         }
       ]
     }
